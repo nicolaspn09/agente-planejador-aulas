@@ -1,0 +1,7 @@
+groq==1.1.2
+langchain==1.2.15
+langchain_community==0.4.1
+langchain_huggingface==1.2.1
+langchain_postgres==0.0.17
+python-dotenv==1.2.2
+streamlit==1.47.0
