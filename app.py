@@ -27,7 +27,7 @@ def get_vectorstore(collection_name):
         password=os.getenv("PG_PASSWORD"),
         driver="psycopg",
     )
-    return PGVector(connection=conn_string, collection_name=collection_name, embeddings=embeddings)
+    return PGVector(connection=conn_string, collection_name=collection_name, embeddings=embeddings, create_extension=False)
 
 # Conectando às duas bases
 db_bncc = get_vectorstore("bncc_embeddings")
